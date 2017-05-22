@@ -15,15 +15,15 @@ If you are interested in working and flying with IFM, please send us your code f
 In some applications, our robots need to find labels on boxes. While there are really awesome machine learning approaches for this, we want you to implement a label detector pipeline using conventional CV methods in C++ (i.e. filters, thresholds, edge detectors, etc.). 
 
 ### The inputs to your program are: 
-an image
+an image with labels either from file or from a ROS topic
 
-### The outputs of your program should be: 
-the position (u,v), orientation (\theta), perimeter (p), area (A), and confidence (\mu) of label detections, published on a ROS topic with a custom ROS message
-
-As you can see, the two images we give you are very different. One is very blurry and low resolution, while the other one looks neat and has a higher resolution. We want your code to work with both. 
+As you can see, the two images we give you as a reference are very different. One is very blurry and low resolution, while the other one looks neat and has a higher resolution. We want your code to work with both. 
 
 ![Image 1](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/216.jpg)
 ![Image 2](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/506.jpg)
+
+### The outputs of your program should be: 
+the position (u,v), orientation (\theta), perimeter (p), area (A), and confidence (\mu) of label detections, published on a ROS topic with a custom ROS message
 
 Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure to keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them on the fly (no pun intended) with rqt. 
 
