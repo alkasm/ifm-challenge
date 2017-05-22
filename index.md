@@ -6,6 +6,8 @@ Computer Vision, and Robotics to automate indoor data capture. We develop
 autonomous systems that know where they are and what they see using no
 external infrastructure.
 
+[![Intelligent Flying Machines](https://img.youtube.com/vi/AMDiR61f86Y/0.jpg)](https://www.youtube.com/watch?v=AMDiR61f86Y)
+
 ## working/flying with IFM
 If you are interested in working and flying with IFM, please send us your code for the following challenge:
 
@@ -18,12 +20,12 @@ an image
 ### The outputs of your program should be: 
 the position (u,v), orientation (\theta), perimeter (p), area (A), and confidence (\mu) of label detections, published on a ROS topic with a custom ROS message
 
-As you can see, the two images we give you are very different. One is very blurry and low resolution, while the other one is very neat and high resolution. We want your code to work with both. 
+As you can see, the two images we give you are very different. One is very blurry and low resolution, while the other one looks neat and has a higher resolution. We want your code to work with both. 
 
-<img src="data/216.jpg" >  
-<img src="data/506.jpg" >  
+![Image 1](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/216.jpg)
+![Image 2](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/506.jpg)
 
-Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure you keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them  with rqt. 
+Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure to keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them on the fly (no pun intended) with rqt. 
 
 ### Here's a few things we like: 
 GPUs
