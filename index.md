@@ -6,16 +6,37 @@ Computer Vision, and Robotics to automate indoor data capture. We develop
 autonomous systems that know where they are and what they see using no
 external infrastructure.
 
-IFM works with customers across automotive manufacturing and logistics to
-improve their operational efficiency through the deployment of these
-systems. Our first product automates inventory checking in warehouses with
-flying robots.
-
 ## working/flying with IFM
-If you are interested in working and flying with IFM, please send us your code for the best label extractor to figure out the position, size, area, and orientation in the included images. To submit, please email us at jobs@ifm-tech.com
+If you are interested in working and flying with IFM, please send us your code for the following challenge:
+
+## the challenge
+In some applications, our robots need to find labels on boxes. While there are really awesome machine learning approaches for this, we want you to implement a label detector pipeline using conventional CV methods in C++ (i.e. filters, thresholds, edge detectors, etc.). 
+
+The inputs to your program are: 
+++ an image
+
+The outputs of your program should be: 
+++ the position, orientation, perimeter, area, and confidence of label detections, published on a ROS topic
+
+As you can see, the two images we give you are very different. One is very blurry while the other one has a very high resolution. 
+
+<img src="https://github.com/ifm-tech/coding_challenge/blob/master/data/216.jpg" >  
+<img src="https://github.com/ifm-tech/coding_challenge/blob/master/data/506.jpg" >  
+
+
+Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure you keep everything organized. Since you will be trying to make this pipeline work with other datasets down the road, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them  with rqt.
+
+Here's a few things we like: 
+++GPUs
+++very few parameters
+++robustness to lighting and rotation
+
+## submission
+To submit, please (private) fork the repo and email us at jobs@ifm-tech.com
 
 ## what we look for
 We look for elegantly written, maintainable, and reusable code. We want you to leverage test-driven principles that quantify your implementation's performance. 
 
-Lastly...
+And... 
+
 <img src="https://img.devrant.io/devrant/rant/r_109448_5NyDp.jpg" >  
