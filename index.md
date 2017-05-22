@@ -20,8 +20,8 @@ the position (u,v), orientation (\theta), perimeter (p), area (A), and confidenc
 
 As you can see, the two images we give you are very different. One is very blurry and low resolution, while the other one is very neat and high resolution. We want your code to work with both. 
 
-<img src="https://github.com/ifm-tech/coding_challenge/blob/master/data/216.jpg" >  
-<img src="https://github.com/ifm-tech/coding_challenge/blob/master/data/506.jpg" >  
+<img src="data/216.jpg" >  
+<img src="data/506.jpg" >  
 
 Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure you keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them  with rqt. 
 
