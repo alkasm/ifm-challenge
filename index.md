@@ -28,8 +28,10 @@ the position (u,v), orientation (theta), perimeter (p), area (A), and confidence
 Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure to keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters that you need as dynamic reconfigure options so you can change them on the fly (literally) with rqt. 
 
 ### here's a few things we like: 
-1) GPUs
+1) GPUs 
+
 2) very few parameters
+
 3) robustness to lighting and rotation
 
 ## submission
