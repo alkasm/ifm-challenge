@@ -8,29 +8,29 @@ external infrastructure.
 
 [![Intelligent Flying Machines](https://img.youtube.com/vi/AMDiR61f86Y/0.jpg)](https://www.youtube.com/watch?v=AMDiR61f86Y)
 
-## working/flying with IFM
-If you are interested in working and flying with IFM, please send us your code for the following challenge:
+## flying with IFM
+We are currently hiring Computer Vision Software Engineers to join our team full time in Chicago. A big part of our hiring process is designed around working through and implementing a vision pipeline from scratch. You will start with the basics and as you progress through the different stages in our interview process, you and your software will grow as you add additional functionalities in several stages. If you make it all the way through to the very end, we will fly you in for a day, work hands on with you to implement the last stage and finally test and run your code on our robots in a real warehouse. 
 
-## the challenge
-In some applications, our robots need to find labels on boxes. While there are really awesome machine learning approaches for this, we want you to implement a label detector pipeline using conventional CV methods in C++ (i.e. filters, thresholds, edge detectors, etc.). 
+## the challenge, stage 1
+In some applications, our robots need to find labels on boxes. While there are really awesome machine learning approaches for this, we want you to implement a label detector pipeline using conventional CV methods in C++ (i.e. filters, thresholds, edge detectors, etc.). You can use OpenCV 3.2 if you want, but less is more. If you decide to implement some of the vision primitives from scratch, that's even better! 
 
 ### The inputs to your program are: 
-an image with labels either from file or from a ROS topic
+an image either from a file or from a ROS topic (2 provided)
 
-As you can see, the two images we give you as a reference are very different. One is very blurry and low resolution, while the other one looks neat and has a higher resolution. We want your code to work with both. 
+As you can see, the two images we give you as a reference are very different. One is very blurry and low resolution, while the other one looks neat and is high resolution. We want your code to work with both. 
 
 ![Image 1](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/216.jpg)
 ![Image 2](https://github.com/ifm-tech/cv_coding_challenge/raw/master/data/506.jpg)
 
 ### The outputs of your program should be: 
-the position (u,v), orientation (\theta), perimeter (p), area (A), and confidence (\mu) of label detections, published on a ROS topic with a custom ROS message
+the position (u,v), orientation (theta), perimeter (p), area (A), and confidence (mu) of label detections, published on a ROS topic with a custom ROS message
 
-Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure to keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters as dynamic reconfigure options so you can change them on the fly (no pun intended) with rqt. 
+Throughout our interview process, we will build upon this initial code to see how well you handle building complete vision pipelines, so make sure to keep everything organized. Since you will try to make this pipeline work with other datasets, it is very advisable to implement all tuning parameters that you need as dynamic reconfigure options so you can change them on the fly (literally) with rqt. 
 
 ### Here's a few things we like: 
-GPUs
-very few parameters
-robustness to lighting and rotation
+1) GPUs
+2) very few parameters
+3) robustness to lighting and rotation
 
 ## submission
 To submit, please fork the repo and email us at jobs@ifm-tech.com
