@@ -1,7 +1,7 @@
 # cv_coding_challenge
 IFM coding challenge
 
-See my code in sol.py, I extract thwe requested features in found_tags. The confadance value is mostly useless it's just the percent of pixels in the fited rectangle that are white
+See my code in sol.py, I extract the requested features to found_tags. The confidence value is mostly useless it's just the percent of pixels in the fitted rectangle that are white
 
 Identified Frame | Mask
 ------------ | -------------
