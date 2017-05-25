@@ -9,7 +9,8 @@ Identified Frame | Mask
 ![frame2](frame2.png) | ![mask2](mask2.png)
 
 Out data 1:
-```{
+```
+{
     "uv": [
         604.4999389648438, 
         677.4999389648438
@@ -42,7 +43,8 @@ Out data 1:
 ```
 
 Out data 2:
-```{
+```
+{
     "uv": [
         859.8844604492188, 
         826.300537109375
