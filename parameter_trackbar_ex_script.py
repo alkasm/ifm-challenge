@@ -13,8 +13,8 @@ __email__ = 'ar@reynoldsalexander.com'
 hires = cv2.imread('data/highres.jpg')
 annotated_hires_img, hires_label_locations = labelWindow.display(hires)
 
-lores = cv2.imread('data/lowres.jpg')
-annotated_lores_img, lores_label_locations = labelWindow.display(lores)
+# lores = cv2.imread('data/lowres.jpg')
+# annotated_lores_img, lores_label_locations = labelWindow.display(lores)
 
 # lores_rot = cv2.imread('data/lowres-rot.jpg')
 # annotated_lores_rot_img, lores_rot_label_locations = labelWindow.display(lores_rot)
@@ -23,7 +23,7 @@ annotated_lores_img, lores_label_locations = labelWindow.display(lores)
 # annotated_lores_mod_img, lores_mod_label_locations = labelWindow.display(lores_mod)
 
 # write the results
-cv2.imwrite('highres_annotated.jpg', annotated_hires_img)
-cv2.imwrite('lowres_annotated.jpg', annotated_lores_img)
+# cv2.imwrite('highres_annotated.jpg', annotated_hires_img)
+# cv2.imwrite('lowres_annotated.jpg', annotated_lores_img)
 # cv2.imwrite('lowres_rot_annotated.jpg', annotated_lores_rot_img)
 # cv2.imwrite('lowres_mod_annotated.jpg', annotated_lores_mod_img)
