@@ -22,3 +22,6 @@ The pipeline returns the annotated images: the label is normalized and outlined 
 # Requirements
 
 These scripts and functions have been tested on OpenCV 3.2.0, OpenCV 3.1.0, Python 3.5.2, and Python 3.6.1.
+
+### Thank you note
+Thanks to [ferret-guy](https://github.com/ferret-guy) for putting this repo online so that I could clone it just hours after IFM removed the repo!
